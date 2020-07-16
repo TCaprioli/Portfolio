@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Landing from './Landing.js';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <div>
+        <Route exact path="/" component={Landing}/>
+      </div>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
