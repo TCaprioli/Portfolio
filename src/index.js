@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Landing from './Landing.js';
+import Landing from './components/Landing.js';
 import About from './components/About';
 import Project from './components/Project';
 import Resume from './components/Resume';

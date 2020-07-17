@@ -1,6 +1,5 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
-import { FaLinkedin,FaGithub,FaMedium } from "react-icons/fa";
 
 
 
