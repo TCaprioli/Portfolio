@@ -24,7 +24,12 @@ export default()=>{
         </span >
         :
         <span id='arrow-con' >
+          <NavLink
+          to='/about'
+          >
+
           <IoIosArrowDropdown id='arrow' onMouseEnter={()=>{useSelected(true)}}/>
+          </NavLink>
         </span >
         
         }

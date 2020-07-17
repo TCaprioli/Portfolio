@@ -93,7 +93,7 @@ background-color:rgba(110, 110, 110, 0.521);
   text-align: center;
   align-items: center;
   background-color: rgba(207, 183, 160, 0.877);
-  overflow: scroll;
+  overflow: auto;
 }
 
 #bout-pic{
@@ -189,6 +189,10 @@ background-color:rgba(110, 110, 110, 0.521);
 
   .text-box{
     margin: 0px 10px 0px 10px;
+  }
+
+  .content{
+    overflow: none;
   }
   
 }
