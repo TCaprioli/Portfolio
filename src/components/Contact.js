@@ -2,16 +2,19 @@ import React from 'react';
 import Navbar from './navbar'
 
 
-function Homepage() {
+export default()=>{
   return (
     <div className='background'>
       <div id='home-con'>
         <Navbar/>
         <div className='content'>
-            <h1>About Me</h1>
-            <img id='bout-pic' src={require('../media/army.png')}/>
-            <p> placeholder text
-            </p>
+          <div className='content-con'>
+
+           <h2></h2>
+           
+
+            
+          </div>
 
             
         </div>
@@ -21,4 +24,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+

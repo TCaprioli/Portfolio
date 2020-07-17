@@ -7,8 +7,12 @@ import { FaLinkedin,FaGithub,FaMedium } from "react-icons/fa";
 function Navbar() {
   return (
     <div id="navbar">
-      
+        <NavLink
+        to="/"
+        exact>
+
         <img id="nav-portrait" src={require("../media/portrait.jpg")} alt="portrait"/>
+        </NavLink>
       
       <div id="navop-container">
 
@@ -59,6 +63,59 @@ function Navbar() {
             <FaGithub className="icon"/>
             <FaMedium className="icon"/>
         </div> */}
+
+        <div id='mobile-nav'>
+        <h1>
+        <NavLink
+        to="/"
+        exact
+        style={{textDecoration: 'none', color: 'black'}}>Tyler Caprioli
+        </NavLink>
+        </h1>
+        
+
+        <span className="nav-option">
+          <NavLink
+          to='/about'
+          style={{textDecoration: 'none', color: 'black'}}>
+        <span >
+          About Me
+           </span>
+          </NavLink>
+        </span>
+
+        <span className="nav-option">
+        <NavLink
+          to='/projects'
+          style={{textDecoration: 'none', color: 'black'}}>
+        <span >
+          Projects
+           </span>
+          </NavLink>
+        </span>
+
+        <span className="nav-option">
+        <NavLink
+          to='/resume'
+          style={{textDecoration: 'none', color: 'black'}}>
+        <span >
+          Resume
+          </span>
+          </NavLink> 
+        </span>
+
+        <span className="nav-option">
+        <NavLink
+          to='/contact'
+          style={{textDecoration: 'none', color: 'black'}}>
+        <span >
+          Contact
+          </span>
+          </NavLink>
+        </span>
+
+    
+        </div>
 
     </div>
   );

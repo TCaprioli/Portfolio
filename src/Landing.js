@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Homepage from './components/homepage'
+import Homepage from './components/About'
 import {IoIosArrowDropdown} from 'react-icons/io'
 import {NavLink} from 'react-router-dom';
 import './App.css';
@@ -16,16 +16,16 @@ export default()=>{
         
         {selected? 
         
-        <span id='arrow-con' onMouseLeave={()=>{useSelected(false)}}>
+        <span id='arrow-con'>
           <NavLink
           to='/about'
           >
-            <IoIosArrowDropdown id='arrow' style={{color: "gray"}}/>
+            <IoIosArrowDropdown id='arrow' style={{color: "gray"}}  onMouseLeave={()=>{useSelected(false)}}/>
           </NavLink>
         </span >
         :
-        <span id='arrow-con' onMouseEnter={()=>{useSelected(true)}}>
-          <IoIosArrowDropdown id='arrow'/>
+        <span id='arrow-con' >
+          <IoIosArrowDropdown id='arrow' onMouseEnter={()=>{useSelected(true)}}/>
         </span >
         
         }
