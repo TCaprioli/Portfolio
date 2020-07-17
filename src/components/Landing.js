@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import Homepage from './About'
 import {IoIosArrowDropdown} from 'react-icons/io'
 import {NavLink} from 'react-router-dom';
 import '../App.css';

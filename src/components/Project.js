@@ -14,11 +14,11 @@ export default()=>{
 
            <h2 className='project-title'>Sonata-React</h2>
 
-           <h4>GitHub: <a href='https://github.com/TCaprioli/Sonata-React-Frontend' target='_blank'>Front-end</a> /
-           <a href='https://github.com/TCaprioli/Sonata/tree/master/Backend' target='_blank'> Back-end</a></h4>
-           <h4>Click here for <a href='http://sonata-react.herokuapp.com' target='_blank'>Demo</a></h4>
+           <h4>GitHub: <a href='https://github.com/TCaprioli/Sonata-React-Frontend' rel='noopener'>Front-end</a> /
+           <a href='https://github.com/TCaprioli/Sonata/tree/master/Backend' rel='noopener'> Back-end</a></h4>
+           <h4>Click here for <a href='http://sonata-react.herokuapp.com' rel='noopener'>Demo</a></h4>
 
-           <img className='project-img' src={require('../media/Sonata.png')}/> 
+           <img className='project-img' src={require('../media/Sonata.png')} alt='sonata main page'/> 
 
            <p className='text-box'>Sonata is a single page music player application with preloaded songs made with React and Ruby on Rails. It allows a user to create playlists and perform "like" actions on songs.</p>
            <br/>
@@ -26,11 +26,11 @@ export default()=>{
 
            <h2 className='project-title'>AppTrack</h2>
 
-           <h4>GitHub: <a href='https://github.com/TCaprioli/AppTrack-Frontend' target='_blank'>Front-end</a> /
-           <a href='https://github.com/TCaprioli/AppTrack-Backend' target='_blank'> Back-end</a></h4>
-           <h4>Click here for <a href='https://www.loom.com/share/7b6662d06a724eaba0fce829ad8d60e1' target='_blank'>Demo</a></h4>
+           <h4>GitHub: <a href='https://github.com/TCaprioli/AppTrack-Frontend' rel='noopener'>Front-end</a> /
+           <a href='https://github.com/TCaprioli/AppTrack-Backend' rel='noopener'> Back-end</a></h4>
+           <h4>Click here for <a href='https://www.loom.com/share/7b6662d06a724eaba0fce829ad8d60e1' rel='noopener'>Demo</a></h4>
 
-           <img className='project-img' src={require('../media/AppTrack.png')}/> 
+           <img className='project-img' src={require('../media/AppTrack.png')} alt='AppTrack main page'/> 
 
            <p className='text-box'>Apptrack is a job application tracker built with React, Redux, and Ruby on Rails. This application allows a user to upload PDF resumes, log job applications, and organize the applications with folders.</p>
             <br/>

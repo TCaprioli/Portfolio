@@ -19,9 +19,9 @@ export default()=>{
           <div>or</div>
            <h3>Get in touch with me on: </h3>
             <div className="icon-container">
-            <a className='icon-link' href='https://www.linkedin.com/in/tylercaprioli/' target='_blank'><FaLinkedin className="icon"/></a>
-            <a className='icon-link' href='https://github.com/TCaprioli' target='_blank'><FaGithub className="icon"/></a>
-            <a className='icon-link' href='https://medium.com/@caprioli.tyler' target='_blank'><FaMedium className="icon"/></a>
+            <a className='icon-link' href='https://www.linkedin.com/in/tylercaprioli/' rel='noopener'><FaLinkedin className="icon"/></a>
+            <a className='icon-link' href='https://github.com/TCaprioli' rel='noopener'><FaGithub className="icon"/></a>
+            <a className='icon-link' href='https://medium.com/@caprioli.tyler' rel='noopener'><FaMedium className="icon"/></a>
         </div>
           </div>
            

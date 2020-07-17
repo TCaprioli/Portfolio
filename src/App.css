@@ -108,6 +108,7 @@ background-color:rgba(110, 110, 110, 0.521);
 
 .text-box{
   margin: 0px 100px 0px 100px;
+  text-align: left;
 }
 
 #mobile-nav{
@@ -151,6 +152,12 @@ background-color:rgba(110, 110, 110, 0.521);
    text-decoration: none;
  }
 
+ #skills-con{
+   display: grid;
+   grid-template-areas: 'lang frame db';
+   grid-template-columns: 33%;
+ }
+
 
 @media(max-width: 850px){
   #home-con{
@@ -179,4 +186,9 @@ background-color:rgba(110, 110, 110, 0.521);
   .background{
     height: 150vh;
   }
+
+  .text-box{
+    margin: 0px 10px 0px 10px;
+  }
+  
 }

@@ -10,7 +10,7 @@ export default()=>{
         <div className='content'>
           <div className='content-con'>
 
-           <iframe id='resume' src={require('../media/Resume.pdf')}>
+           <iframe id='resume' src={require('../media/Resume.pdf')} title='My resume'>
 
            </iframe>
            
