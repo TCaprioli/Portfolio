@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Landing from './Landing.js';
+import Homepage from './components/homepage'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
@@ -10,6 +11,7 @@ ReactDOM.render(
     <Router>
       <div>
         <Route exact path="/" component={Landing}/>
+        <Route path="/about" component={Homepage}/>
       </div>
     </Router>
   </React.StrictMode>,
