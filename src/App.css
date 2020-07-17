@@ -41,6 +41,10 @@ svg#arrow{
   margin: auto;
 }
 
+svg#arrow:hover{
+  color: gray;
+}
+
 #navbar{
   height: 100vh;
   grid-area: navbar;
