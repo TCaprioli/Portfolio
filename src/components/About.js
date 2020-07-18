@@ -1,5 +1,8 @@
 import React from 'react';
-import Navbar from './navbar'
+import Navbar from './navbar';
+import arrow from './arrow';
+import { FaArrowAltCircleUp } from "react-icons/fa";
+
 
 
 export default()=>{
@@ -62,7 +65,9 @@ export default()=>{
             
           </div>
 
-            
+          <div className='up-con'>
+          <FaArrowAltCircleUp className='up-arrow' onClick={()=>{arrow()}}/>
+          </div>
         </div>
 
       </div>

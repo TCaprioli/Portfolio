@@ -1,6 +1,8 @@
 import React from 'react';
 import Navbar from './navbar'
-import { FaLinkedin,FaGithub,FaMedium } from "react-icons/fa";
+import arrow from './arrow'
+import { FaLinkedin,FaGithub,FaMedium,FaArrowAltCircleUp } from "react-icons/fa";
+
 
 
 
@@ -22,16 +24,13 @@ export default()=>{
             <a className='icon-link' href='https://www.linkedin.com/in/tylercaprioli/' rel='noopener'><FaLinkedin className="icon"/></a>
             <a className='icon-link' href='https://github.com/TCaprioli' rel='noopener'><FaGithub className="icon"/></a>
             <a className='icon-link' href='https://medium.com/@caprioli.tyler' rel='noopener'><FaMedium className="icon"/></a>
-        </div>
-          </div>
-           
-
-            
           </div>
 
-            
-        </div>
 
+
+          </div>
+          </div>
+        </div>
       </div>
     </div>
   );
