@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from './navbar'
-import arrow from './arrow'
 import { FaLinkedin,FaGithub,FaMedium,FaArrowAltCircleUp } from "react-icons/fa";
 
 
