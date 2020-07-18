@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './navbar'
 import { FaLinkedin,FaGithub,FaMedium,FaArrowAltCircleUp } from "react-icons/fa";
+import arrow from './arrow';
 
 
 
@@ -13,6 +14,9 @@ export default(props)=>{
         <div className='content'>
           <div className='content-con'>
            {props.children}
+          </div>
+          <div id='up-con'>
+            <FaArrowAltCircleUp id='up-arrow' onClick={()=>{arrow()}}/>
           </div>
         </div>
       </div>

@@ -162,18 +162,18 @@ background-color:rgba(110, 110, 110, 0.521);
    grid-template-columns: 33%;
  }
 
- .up-con{
+ #up-con{
   margin-top: 100px;
   position: fixed;
   left: 100000px;
  }
 
- .up-con:hover{
+ #up-con:hover{
   color: white;
   cursor: pointer;
  }
 
- .up-arrow{
+ #up-arrow{
    height: 25px;
    width: 25px;
  }
@@ -216,7 +216,7 @@ background-color:rgba(110, 110, 110, 0.521);
     overflow: none;
   }
 
-  .up-con{
+  #up-con{
     margin-top: 100px;
     position: inherit;
    }
