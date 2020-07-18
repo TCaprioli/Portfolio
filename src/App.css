@@ -204,6 +204,8 @@ background-color:rgba(110, 110, 110, 0.521);
 
   .background{
     height: 150vh;
+    width: 100vw;
+    /* background-position: 0% 75%; */
   }
 
   .text-box{
@@ -219,9 +221,5 @@ background-color:rgba(110, 110, 110, 0.521);
     position: inherit;
    }
 
-   /* #resume{
-     width: 60%;
-     height: 400px;
-   } */
   
 }

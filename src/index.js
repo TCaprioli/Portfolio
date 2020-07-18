@@ -1,23 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Landing from './components/Landing.js';
 import About from './components/About';
 import Project from './components/Project';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
+import NoMatch from './components/NoMatch';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <div>
-        <Route exact path="/" component={Landing}/>
-        <Route path="/about" component={About}/>
-        <Route path="/projects" component={Project}/>
-        <Route path="/resume" component={Resume}/>
-        <Route path="/contact" component={Contact}/>
+        <Switch>
+          <Route exact path="/" component={Landing}/>
+          <Route path="/about" component={About}/>
+          <Route path="/projects" component={Project}/>
+          <Route path="/resume" component={Resume}/>
+          <Route path="/contact" component={Contact}/>
+          <Route component={NoMatch}/>
+        </Switch>
       </div>
     </Router>
   </React.StrictMode>,
