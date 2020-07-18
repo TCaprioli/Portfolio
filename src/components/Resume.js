@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './navbar';
 import arrow from './arrow';
 import { FaArrowAltCircleUp } from "react-icons/fa";
+import ResumePDF from '../media/Resume.pdf'
 
 
 
@@ -13,11 +14,11 @@ export default()=>{
         <div className='content'>
           <div className='content-con'>
 
-           <iframe id='resume' src={require('../media/Resume.pdf')} title='My resume' allowFullScreen={false}>
-
-           </iframe>
+           <object id='resume' data={ResumePDF} type='application/pdf' title='My resume' ></object>
            
-
+           <br/>
+           <a href={ResumePDF} download="Tyler Caprioli - Resume">Download as a PDF</a>
+        
             
           </div>
 
