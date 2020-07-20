@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Landing from './components/Landing.js';
-import About from './components/About';
-import Project from './components/Project';
-import Resume from './components/Resume';
-import Contact from './components/Contact';
-import NoMatch from './components/NoMatch';
+import Landing from './pages/Landing.js';
+import About from './pages/About';
+import Project from './pages/Project';
+import Resume from './pages/Resume';
+import Contact from './pages/Contact';
+import NoMatch from './pages/NoMatch';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(

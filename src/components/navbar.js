@@ -57,11 +57,7 @@ function Navbar() {
 
     </div>
 
-        {/* <div className="icon-container">
-            <FaLinkedin id="icon1" className="icon"/>
-            <FaGithub className="icon"/>
-            <FaMedium className="icon"/>
-        </div> */}
+      
 
         <div id='mobile-nav'>
         <h1>

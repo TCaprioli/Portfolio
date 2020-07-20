@@ -1,15 +1,13 @@
 import React from 'react';
-import Navbar from './navbar'
-import { FaLinkedin,FaGithub,FaMedium,FaArrowAltCircleUp } from "react-icons/fa";
-import Layout from './Layout';
-
-
+import { FaLinkedin,FaGithub,FaMedium } from "react-icons/fa";
+import Layout from '../components/Layout';
 
 
 export default()=>{
   return (
 <>
   <Layout>
+
   <h1>Contact Me</h1>
   <div id='contact-con'>
 
@@ -24,6 +22,9 @@ export default()=>{
   </div>
 
   </div>
+
+
+
   </Layout>
 </>
   );

@@ -6,7 +6,9 @@ import '../App.css';
 
 export default()=>{
   return (
-    <div className="background">
+    <div className="background landing">
+      <div id='intro-con'>
+
       <div id="portrait"></div>
       <div id="intro-text">
         <h1 className="text">Tyler Caprioli</h1>
@@ -23,6 +25,7 @@ export default()=>{
         </span >
        
         </div>
+      </div>
     </div>
   );
 }

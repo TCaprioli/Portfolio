@@ -1,3 +1,4 @@
+
 .background{
   background-image: url("./media/background.jpg");
   background-size: cover;
@@ -26,11 +27,18 @@
   text-align: center;
 }
 
+#intro-con{
+  background-color: rgba(0, 0, 0, 0.562);
+  height: 100%;
+}
+
 .text{
   text-shadow: 0 0 4px #000000;
 }
 
 #arrow-con{
+  position: relative;
+  bottom: 20px;
   height: 300px;
   width: 300px;
 }
@@ -46,9 +54,8 @@ svg#arrow:hover{
 }
 
 #navbar{
-  height: 100vh;
   grid-area: navbar;
-
+  height: 50vh;
 }
 
 #nav-portrait{
@@ -74,10 +81,11 @@ svg#arrow:hover{
 .nav-option{
 background-color:rgba(110, 110, 110, 0.521);
  margin-bottom: 10px;
- max-width: 50%;
+ width: 50%;
  padding: 5px;
  text-align: center;
  border: solid;
+
 }
 
 .nav-option:hover{
@@ -163,7 +171,6 @@ background-color:rgba(110, 110, 110, 0.521);
  }
 
  #up-con{
-  margin-top: 100px;
   position: fixed;
   left: 100000px;
  }
@@ -181,11 +188,12 @@ background-color:rgba(110, 110, 110, 0.521);
 @media(max-width: 850px){
   #home-con{
   grid-template-areas:
-  "navbar "
+  "navbar"
   "content";
-  padding-right: 20px;
+  padding-left: 0px;
   grid-template-columns: none;
-  grid-template-rows: 20% 80%;
+  grid-template-rows: 10% 90%;
+  height: 100%
   }
   #navop-container{
     position: fixed;
@@ -200,12 +208,12 @@ background-color:rgba(110, 110, 110, 0.521);
   #mobile-nav{
     position: relative;
     left: 0;
+    width: 100vw;
   }
 
   .background{
-    height: 150vh;
+    height: 100%;
     width: 100vw;
-    /* background-position: 0% 75%; */
   }
 
   .text-box{
@@ -213,13 +221,55 @@ background-color:rgba(110, 110, 110, 0.521);
   }
 
   .content{
-    overflow: none;
+    overflow: visible;
+    height: 100%;
+  }
+
+
+
+  .background.landing{
+    height: 100vh;
   }
 
   #up-con{
-    margin-top: 100px;
     position: inherit;
+    margin-top: 100px;
    }
 
+   svg#arrow{
+     width: 70px;
+   }
+
+   .nav-option{
+    border: 0.5px solid;
+   }
+
+   #portrait{
+     /* width: 50vw;
+     height: 100%; */
+   }
+ 
   
+}
+
+@media(max-height: 570px){
+  #portrait{
+  
+    position: relative;
+    top: 40px;
+  }
+  
+  #intro-text{
+    position: relative;
+    top: 25px;
+ 
+  }
+  
+}
+
+@media(max-height: 400px){
+  .background.landing{
+    height: 200vh;
+  }
+
 }
