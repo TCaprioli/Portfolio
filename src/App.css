@@ -55,7 +55,6 @@ svg#arrow:hover{
 
 #navbar{
   grid-area: navbar;
-  height: 50vh;
 }
 
 #nav-portrait{
@@ -63,18 +62,15 @@ svg#arrow:hover{
   background-size: cover;
   height: 200px;
   width: 200px;
-  /* margin: auto; */
   border-radius: 50%;
   position: relative;
   top: 60px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  grid-area: port;
 }
 
 #navop-container{
   position: relative;
   top: 100px;
-  /* margin: auto; */
   display: inline;
 }
 
@@ -112,6 +108,7 @@ background-color:rgba(110, 110, 110, 0.521);
   height: 300px;
   width: 300px;
   border-radius: 20%;
+  padding-top: 20px;
 }
 
 .content-con{
@@ -185,6 +182,11 @@ background-color:rgba(110, 110, 110, 0.521);
    width: 25px;
  }
 
+ #e-caption{
+   position: relative;
+   bottom: 15px;
+ }
+
 @media(max-width: 850px){
   #home-con{
   grid-template-areas:
@@ -192,8 +194,7 @@ background-color:rgba(110, 110, 110, 0.521);
   "content";
   padding-left: 0px;
   grid-template-columns: none;
-  grid-template-rows: 10% 90%;
-  height: 100%
+  height: 100%;
   }
   #navop-container{
     position: fixed;
@@ -209,6 +210,7 @@ background-color:rgba(110, 110, 110, 0.521);
     position: relative;
     left: 0;
     width: 100vw;
+    padding-bottom: 10px;
   }
 
   .background{
@@ -224,8 +226,6 @@ background-color:rgba(110, 110, 110, 0.521);
     overflow: visible;
     height: 100%;
   }
-
-
 
   .background.landing{
     height: 100vh;
@@ -243,12 +243,6 @@ background-color:rgba(110, 110, 110, 0.521);
    .nav-option{
     border: 0.5px solid;
    }
-
-   #portrait{
-     /* width: 50vw;
-     height: 100%; */
-   }
- 
   
 }
 

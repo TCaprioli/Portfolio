@@ -13,9 +13,9 @@ export default(props)=>{
         <Navbar/>
         <div className='content'>
 
-          <div className='content-con'>
             {props.children}
-          </div>
+          {/* <div className='content-con'>
+          </div> */}
           <div id='up-con'>
             <FaArrowAltCircleUp id='up-arrow' onClick={()=>{arrow()}}/>
           </div>

@@ -9,9 +9,12 @@ export default()=>{
   <Layout>
 
   <h1>Contact Me</h1>
-  <div id='contact-con'>
 
-  <h2>Email me: Capriolityler@gmail.com</h2>
+
+  <h2>Email me:</h2>
+    <h3><a href='mailto: capriolityler@gmail.com'>Capriolityler@gmail.com</a></h3>
+    <span id='e-caption'>(link opens email app)</span>
+
   <div>or</div>
     <h3>Get in touch with me on: </h3>
     
@@ -21,7 +24,7 @@ export default()=>{
     <a className='icon-link' href='https://medium.com/@caprioli.tyler' rel='noopener'><FaMedium className="icon"/></a>
   </div>
 
-  </div>
+
 
 
 
