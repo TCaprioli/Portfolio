@@ -1,5 +1,5 @@
 import React from 'react'
-import army from '../media/army.png'
+import army from '../media/army.jpg'
 
 
 export default ()=>{

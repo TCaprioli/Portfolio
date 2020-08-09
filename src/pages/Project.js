@@ -1,8 +1,8 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import Project from '../components/Project';
-import Sonata from '../media/Sonata.png'
-import AppTrack from '../media/AppTrack.png'
+import Sonata from '../media/Sonata.jpg'
+import AppTrack from '../media/AppTrack.jpg'
 
 
 export default()=>{
