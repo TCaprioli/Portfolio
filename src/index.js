@@ -7,6 +7,7 @@ import About from './pages/About';
 import Project from './pages/Project';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
+import { Maintenance } from './Maintenance';
 import NoMatch from './pages/NoMatch';
 import * as serviceWorker from './serviceWorker';
 
@@ -15,11 +16,11 @@ ReactDOM.render(
     <Router>
       <div>
         <Switch>
-          <Route exact path="/" component={Landing}/>
-          <Route path="/about" component={About}/>
+          <Route exact path="/" component={Maintenance}/>
+          {/* <Route path="/about" component={About}/>
           <Route path="/projects" component={Project}/>
           <Route path="/resume" component={Resume}/>
-          <Route path="/contact" component={Contact}/>
+          <Route path="/contact" component={Contact}/> */}
           <Route component={NoMatch}/>
         </Switch>
       </div>
