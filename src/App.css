@@ -1,269 +1,42 @@
-
-.background{
-  background-image: url("./media/background.jpg");
-  background-size: cover;
-  height: 100vh;
-  background-position: 0% 50%;
-  background-attachment: fixed;
-
-}
-
-#portrait{
-  background-image: url("./media/portrait.jpg");
-  background-size: cover;
-  height: 300px;
-  width: 300px;
-  margin: auto;
-  border-radius: 50%;
-  position: relative;
-  top: 60px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-}
-
-#intro-text{
-  position: relative;
-  top: 60px;
-  color: white;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
 }
 
-#intro-con{
-  background-color: rgba(0, 0, 0, 0.562);
-  height: 100%;
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-.text{
-  text-shadow: 0 0 4px #000000;
-}
-
-#arrow-con{
-  position: relative;
-  bottom: 20px;
-  height: 300px;
-  width: 300px;
-}
-svg#arrow{
-  height: 80px;
-  width: 30px;
-  color: white;
-  margin: auto;
-}
-
-svg#arrow:hover{
-  color: gray;
-}
-
-#navbar{
-  grid-area: navbar;
-}
-
-#nav-portrait{
-  background-image: url("./media/portrait.jpg");
-  background-size: cover;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  position: relative;
-  top: 60px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#navop-container{
-  position: relative;
-  top: 100px;
-  display: inline;
-}
-
-.nav-option{
-background-color:rgba(110, 110, 110, 0.521);
- margin-bottom: 10px;
- width: 50%;
- padding: 5px;
- text-align: center;
- border: solid;
-
-}
-
-.nav-option:hover{
-  background-color: white;
-}
-
-#home-con{
-  display: grid;
-  grid-template-areas: 'navbar content';
-  grid-template-columns: 30% 70%;
-  padding-left: 20px;
-  height: 100vh;
-}
-
-.content{
-  height: 100vh;
-  text-align: center;
-  align-items: center;
-  background-color: rgba(207, 183, 160, 0.877);
-  overflow: auto;
-}
-
-#bout-pic{
-  height: 300px;
-  width: 300px;
-  border-radius: 20%;
-  padding-top: 20px;
-}
-
-.content-con{
-  padding-top: 20px;
-}
-
-.text-box{
-  margin: 0px 100px 0px 100px;
-  text-align: left;
-}
-
-#mobile-nav{
-  position: fixed;
-  left: 10000px;
-}
-
-.project-img{
-  max-width: 90%;
-  height: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 20px;
-
-}
-
-.project-title{
-  text-decoration: underline;
-}
-
-#resume{
-  width: 80%;
-  height: 75vh;
-}
-
-#contact-con{
-  position: relative;
-  top: 100px;
-}
-
-.icon{
-  height: 100px;
-  width: 100px;
-  padding: 20px;
-}
-
-.icon:hover{
-  color: white;
-}
- .icon-link{
-   color: black;
-   text-decoration: none;
- }
-
- #skills-con{
-   display: grid;
-   grid-template-areas: 'lang frame db';
-   grid-template-columns: 33%;
- }
-
- #up-con{
-  position: fixed;
-  left: 100000px;
- }
-
- #up-con:hover{
-  color: white;
-  cursor: pointer;
- }
-
- #up-arrow{
-   height: 25px;
-   width: 25px;
- }
-
- #e-caption{
-   position: relative;
-   bottom: 15px;
- }
-
-@media(max-width: 850px){
-  #home-con{
-  grid-template-areas:
-  "navbar"
-  "content";
-  padding-left: 0px;
-  grid-template-columns: none;
-  height: 100%;
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
   }
-  #navop-container{
-    position: fixed;
-    left: 10000px;
+  to {
+    transform: rotate(360deg);
   }
-
-  #nav-portrait{
-    position: fixed;
-    left: 10000px;
-  }
-
-  #mobile-nav{
-    position: relative;
-    left: 0;
-    width: 100vw;
-    padding-bottom: 10px;
-  }
-
-  .background{
-    height: 100%;
-    width: 100vw;
-  }
-
-  .text-box{
-    margin: 0px 10px 0px 10px;
-  }
-
-  .content{
-    overflow: visible;
-    height: 100%;
-  }
-
-  .background.landing{
-    height: 100vh;
-  }
-
-  #up-con{
-    position: inherit;
-    margin-top: 100px;
-   }
-
-   svg#arrow{
-     width: 70px;
-   }
-
-   .nav-option{
-    border: 0.5px solid;
-   }
-  
 }
 
-@media(max-height: 570px){
-  #portrait{
-  
-    position: relative;
-    top: 40px;
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
   }
-  
-  #intro-text{
-    position: relative;
-    top: 25px;
- 
-  }
-  
 }
 
-@media(max-height: 400px){
-  .background.landing{
-    height: 200vh;
-  }
+.card {
+  padding: 2em;
+}
 
+.read-the-docs {
+  color: #888;
 }
