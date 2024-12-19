@@ -1,11 +1,12 @@
-import "./App.css";
-
+import { About } from "./components/About"
+import { Landing } from "./components/Landing"
 function App() {
   return (
-    <>
-      <h1>Hey, I'm Tyler!</h1>
-    </>
-  );
+    <div className="flex flex-col w-screen bg-steel">
+      <Landing />
+      <About />
+    </div>
+  )
 }
 
-export default App;
+export default App
