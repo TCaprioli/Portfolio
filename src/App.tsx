@@ -5,7 +5,7 @@ import { NavMenu } from "./components/NavMenu"
 import { Projects } from "./components/Projects"
 function App() {
   return (
-    <div className="flex flex-col w-screen">
+    <div className="flex flex-col w-screen pt-14">
       <NavMenu />
       <Landing />
       <About />
