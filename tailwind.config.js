@@ -12,5 +12,13 @@ export default {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".text-shadow-steel-glow": {
+          textShadow: "rgb(229, 233, 238, 0.9) 0px 0px 39px",
+        },
+      })
+    },
+  ],
 }

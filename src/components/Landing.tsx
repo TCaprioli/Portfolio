@@ -19,7 +19,7 @@ export const Landing = () => {
           </button>
         </div>
       </div>
-      <div className=" flex justify-center mt-4  sm:basis-1/2  w-full items-start">
+      <div className="flex justify-center mt-4  sm:basis-1/2  w-full items-start">
         <div className="relative bg-steel rounded-3xl w-72 h-96 items-start overflow-hidden">
           <img
             src={headShot}
