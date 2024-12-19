@@ -1,21 +1,23 @@
 import headShot from "../assets/headshot.png"
-
+import resume from "../assets/resume.pdf"
 export const Landing = () => {
   return (
     <section
       id="home"
-      className="flex flex-col sm:flex-row bg-charcoal h-screen sm:max-h-[50vh] w-full items-center justify-center px-9 pt-14"
+      className="flex flex-col sm:flex-row bg-charcoal h-screen sm:max-h-[50vh] w-full items-center justify-center px-9 pt-14 overflow-hidden"
     >
-      <div className="flex flex-col sm:basis-1/2 justify-center sm:items-center sm:justify-normal">
+      <div className="relative flex flex-col sm:basis-1/2 justify-center sm:items-center sm:justify-normal">
         <div className="flex flex-col items-center sm:items-start">
-          <p className=" text-3xl sm:text-4xl font-bold text-steel font-serif mb-2">
+          <p className="text-3xl sm:text-4xl font-bold text-steel font-serif mb-2">
             Tyler Caprioli
           </p>
           <h1 className="text-4xl md:text-6xl text-cherry font-serif font-bold mb-2 ">
             Web Developer
           </h1>
           <button className="border border-cherry text-steel max-w-64 hover:border-cherry hover:bg-steel hover:text-cherry">
-            Download Resume
+            <a href={resume} target="_blank">
+              Download Resume
+            </a>
           </button>
         </div>
       </div>
