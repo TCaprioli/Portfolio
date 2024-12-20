@@ -47,7 +47,7 @@ const portfolioData: ProjectData = {
   name: "Portfolio",
   image: portfolio,
   links: {
-    frontend: "",
+    frontend: "https://github.com/TCaprioli/Portfolio/tree/master",
   },
   description: "A portfolio showcasing my skills, experience, and projects.",
   technologies: ["React", "TypeScript", "Vite", "Tailwind"],
