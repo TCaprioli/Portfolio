@@ -14,7 +14,7 @@ export const Landing = () => {
           <h1 className="text-4xl md:text-6xl text-cherry font-serif font-bold mb-2 ">
             Web Developer
           </h1>
-          <button className="border border-cherry text-steel max-w-64 hover:border-cherry hover:bg-steel hover:text-cherry">
+          <button className="bg-charcoal border border-cherry text-steel max-w-64 hover:border-cherry hover:bg-steel hover:text-cherry">
             <a href={resume} target="_blank">
               Download Resume
             </a>
