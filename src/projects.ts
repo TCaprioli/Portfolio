@@ -14,7 +14,7 @@ const appTrackData: ProjectData = {
   name: "AppTrack",
   image: appTrack,
   links: {
-    live: "https://apptrack-bice.vercel.app/",
+    live: "https://apptrack-bice.vercel.app/login",
     frontend: "https://github.com/TCaprioli/Apptrack",
     backend: "https://github.com/TCaprioli/Apptrack-go",
   },
