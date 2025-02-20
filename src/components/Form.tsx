@@ -26,7 +26,7 @@ export const Form = () => {
     form.append("name", formData.name)
     form.append("email", formData.email)
     form.append("message", formData.message)
-    form.append("access_key", "YOUR_ACCESS_KEY_HERE")
+    form.append("access_key", "44f60536-9423-4c29-a7e7-1eba046debdd")
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
