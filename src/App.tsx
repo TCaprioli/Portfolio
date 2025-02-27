@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import { About } from "./components/About"
 import { Contact } from "./components/Contact"
 import { Landing } from "./components/Landing"

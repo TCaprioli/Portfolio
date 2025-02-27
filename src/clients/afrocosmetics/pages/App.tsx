@@ -2,7 +2,7 @@ import "./App.css"
 import logo from "../assets/logo.png"
 import User from "../assets/user.svg?react"
 import Cart from "../assets/cart.svg?react"
-import ad from "../assets/advert.jpg"
+import ad from "../assets/offer.jpg"
 import product from "../assets/product.jpg"
 import oils from "../assets/categories/new-essential-oil.jpg"
 import fragrance from "../assets/categories/fragrance-category-banner.jpg"
@@ -18,6 +18,7 @@ import blackSoap from "../assets/products/BLACK_SOAP-02-1__42217_1__11561.172465
 import gingOil from "../assets/products/Ginger-Essential-Oil__04043.jpg"
 import sunOil from "../assets/products/sunflower.jpg"
 import pepOil from "../assets/products/peppermint.jpg"
+import { useEffect } from "react"
 const navOptions = [
   "Seamoss Products",
   "Fragrance Oils",
@@ -91,6 +92,17 @@ const products = [
 ]
 
 export function AfroCos() {
+  useEffect(() => {
+    const metaTag = document.createElement("meta")
+    metaTag.name = "robots"
+    metaTag.content = "noindex"
+    document.head.appendChild(metaTag)
+
+    return () => {
+      document.head.removeChild(metaTag)
+    }
+  }, [])
+
   return (
     <div className="clone" style={{ width: "100%", overflow: "hidden" }}>
       {
@@ -230,7 +242,7 @@ export function AfroCos() {
               margin: "16px 0",
             }}
           />
-          <p style={{ paddingTop: "12px" }}>
+          <p style={{ padding: "12px 0 30px" }}>
             We are ShopAfrocosmetics, a small, family-owned business based in
             Atlanta, Georgia, passionate about providing affordable,
             high-quality personal care products. We take pride in being
