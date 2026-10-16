@@ -1,8 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tyler Caprioli is a web developer building thoughtful, user-friendly applications."
+    />
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -11,14 +15,308 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tyler Caprioli</title>
+    <link rel="stylesheet" href="/src/index.css" />
+    <title>Tyler Caprioli | Web Developer</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="wordmark" href="#home">TC<span>.</span></a>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Portfolio / 2026</p>
+          <p class="hero-name">Tyler Caprioli</p>
+          <h1 id="hero-title">Web Developer</h1>
+          <p class="hero-summary">
+            I build clean, useful digital experiences with care for the details.
+          </p>
+          <a
+            class="button button-outline"
+            href="/src/assets/resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Download resume
+          </a>
+        </div>
+        <figure class="portrait-frame">
+          <img
+            src="/src/assets/headshot.png"
+            alt="Portrait of Tyler Caprioli"
+          />
+          <figcaption>Based in the United States</figcaption>
+        </figure>
+        <a class="scroll-cue" href="#about">Scroll to explore</a>
+      </section>
+
+      <section
+        class="about section-shell"
+        id="about"
+        aria-labelledby="about-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow">A little about me</p>
+          <h2 id="about-title">Thoughtful work.<br />Built with purpose.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            Serving 8 years as a Combat Engineer in the Army Reserves taught me
+            a lot about grit, attention to detail, and problem-solving. I've
+            taken those lessons with me to web development, where I apply the
+            same discipline to creating clean, efficient code and building
+            user-friendly applications. My experience in both leadership and
+            team-based roles enables me to approach complex challenges with
+            focus and adaptability, driving successful outcomes in every
+            project.
+          </p>
+          <h3>Skills</h3>
+          <ul class="tag-list" aria-label="Skills">
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>JavaScript</li>
+            <li>Next</li>
+            <li>Redux</li>
+            <li>Jest</li>
+            <li>Playwright</li>
+            <li>Git</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Sass</li>
+            <li>Tailwind</li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        class="projects section-shell"
+        id="projects"
+        aria-labelledby="projects-title"
+      >
+        <div class="projects-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="projects-title">Projects</h2>
+        </div>
+
+        <article class="project">
+          <a
+            class="project-image"
+            href="https://apptrack-bice.vercel.app/login"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="/src/assets/apptrack.png"
+              alt="AppTrack job application tracking interface"
+              loading="lazy"
+            />
+          </a>
+          <div class="project-copy">
+            <p class="project-number">01 / Application</p>
+            <h3>AppTrack</h3>
+            <p class="project-description">
+              A web-based application designed to help users manage and track
+              job applications. Users can register, log in, and manage their
+              applications in one place.
+            </p>
+            <p class="project-links">
+              <a
+                href="https://apptrack-bice.vercel.app/login"
+                target="_blank"
+                rel="noreferrer"
+                >Live site</a
+              >
+              <a
+                href="https://github.com/TCaprioli/Apptrack"
+                target="_blank"
+                rel="noreferrer"
+                >Frontend</a
+              >
+              <a
+                href="https://github.com/TCaprioli/Apptrack-go"
+                target="_blank"
+                rel="noreferrer"
+                >Backend</a
+              >
+            </p>
+            <ul class="tag-list" aria-label="AppTrack technologies">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Vite</li>
+              <li>Tailwind</li>
+              <li>Go</li>
+              <li>Postgres</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project project-reverse">
+          <a
+            class="project-image"
+            href="https://www.mfbtech.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="/src/assets/mfbtech.png"
+              alt="MFB Technologies promotional website"
+              loading="lazy"
+            />
+          </a>
+          <div class="project-copy">
+            <p class="project-number">02 / Website</p>
+            <h3>MFBTech</h3>
+            <p class="project-description">
+              Promotional website for MFB Technologies.
+            </p>
+            <p class="project-links">
+              <a
+                href="https://www.mfbtech.com/"
+                target="_blank"
+                rel="noreferrer"
+                >Live site</a
+              >
+            </p>
+            <ul class="tag-list" aria-label="MFBTech technologies">
+              <li>Next</li>
+              <li>TypeScript</li>
+              <li>Vite</li>
+              <li>Sass</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project">
+          <a
+            class="project-image"
+            href="https://align.lawyer/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="/src/assets/align.png"
+              alt="Align website for legal professionals"
+              loading="lazy"
+            />
+          </a>
+          <div class="project-copy">
+            <p class="project-number">03 / Website</p>
+            <h3>Align</h3>
+            <p class="project-description">Promotional website for Align.</p>
+            <p class="project-links">
+              <a href="https://align.lawyer/" target="_blank" rel="noreferrer"
+                >Live site</a
+              >
+            </p>
+            <ul class="tag-list" aria-label="Align technologies">
+              <li>Next</li>
+              <li>TypeScript</li>
+              <li>Vite</li>
+              <li>Sass</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project project-reverse">
+          <a
+            class="project-image"
+            href="https://github.com/TCaprioli/Portfolio/tree/master"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="/src/assets/portfolio.png"
+              alt="Previous version of Tyler Caprioli's portfolio"
+              loading="lazy"
+            />
+          </a>
+          <div class="project-copy">
+            <p class="project-number">04 / Personal</p>
+            <h3>Portfolio</h3>
+            <p class="project-description">
+              A portfolio showcasing my skills, experience, and projects.
+            </p>
+            <p class="project-links">
+              <a
+                href="https://github.com/TCaprioli/Portfolio/tree/master"
+                target="_blank"
+                rel="noreferrer"
+                >Source code</a
+              >
+            </p>
+            <ul class="tag-list" aria-label="Portfolio technologies">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Vite</li>
+              <li>Tailwind</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section
+        class="contact section-shell"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="contact-intro">
+          <p class="eyebrow">Have a project in mind?</p>
+          <h2 id="contact-title">Let's talk.</h2>
+          <p>Send a note and I'll get back to you.</p>
+        </div>
+        <form
+          class="contact-form"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="44f60536-9423-4c29-a7e7-1eba046debdd"
+          />
+          <input type="hidden" name="subject" value="Portfolio contact form" />
+          <label for="name">Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            required
+          />
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+          />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button class="button button-dark" type="submit">
+            Send message <span aria-hidden="true">↗</span>
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark" href="#home">TC<span>.</span></a>
+      <p>© 2026 Tyler Caprioli</p>
+      <a href="https://github.com/TCaprioli" target="_blank" rel="noreferrer"
+        >GitHub</a
+      >
+    </footer>
   </body>
 </html>
